@@ -1,7 +1,14 @@
+/**
+  * Поддержка js
+  */
+
 var body = document.querySelector('body');
 
 body.classList.remove('nojs');
 
+/**
+  * Форма обратной ствязи
+  */
 var contactsFeedbackBtn = document.querySelector('.contacts__btn-feedback');
 
 var overlay = document.querySelector('.overlay');
