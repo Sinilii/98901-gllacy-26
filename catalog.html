@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси Каталог</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="nojs">
@@ -66,11 +66,11 @@
         </div>
         <div class="page-header__user">
           <div class="page-header__btn  page-header__btn--login">
-            Вход
+            <a href="">Вход</a>
             <div class="page-header__popup-wrap">
               <form class="login-form" id="login-form" action="/" method="post">
-                <input type="email" name="email" placeholder="Электронная почта">
-                <input type="password" name="password" placeholder="Пароль">
+                <input type="email" name="email" placeholder="Электронная почта" required="">
+                <input type="password" name="password" placeholder="Пароль" required="">
                 <input class="btn" type="submit" value="Войти">
                 <div class="login-form__links">
                   <a class="login-form__link" href="#">
@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="page-header__btn  page-header__btn--basket-full">
-            2 товара
+            <a href="">2 товара</a>
             <div class="page-header__popup-wrap">
               <table class="basket-table">
                 <caption class="visually-hidden">Товары в корзине:</caption>
@@ -194,8 +194,8 @@
                     <div class="filter-form__range-scale">
                       <div class="filter-form__range-bar"></div>
                     </div>
-                    <div class="filter-form__range-toggle  filter-form__range-toggle--min"></div>
-                    <div class="filter-form__range-toggle  filter-form__range-toggle--max"></div>
+                    <div class="filter-form__range-toggle  filter-form__range-toggle--min" title="Минимальная цена"></div>
+                    <div class="filter-form__range-toggle  filter-form__range-toggle--max" title="Максимальная цена"></div>
                   </div>
                 </div>
               </fieldset>
@@ -275,8 +275,7 @@
               <input class="filter-form__btn" type="submit" value="Применить">
             </form>
           </section>
-          <section class="catalog__list">
-            <div class="catalog__list-items">
+          <section class="catalog__list catalog__list-items">
               <div class="product-item">
                 <div class="product-item__preview">
                   <div class="product-item__img-wrap">
@@ -505,16 +504,16 @@
                   <a class="btn  product-item__btn" href="#">Быстрый просмотр</a>
                 </div>
               </div>
-            </div>
+
           </section>
           <div class="paginator">
-            <a class="paginator__arrow  paginator__arrow--prev  paginator__arrow--inactive" href="">&lt;</a>
+            <a class="paginator__arrow  paginator__arrow--prev  paginator__arrow--inactive" href="" title="Предыдущая странциа">&lt;</a>
             <a class="paginator__page-link  paginator__page-link--active">1</a>
             <a class="paginator__page-link" href="#2">2</a>
             <a class="paginator__page-link" href="#3">3</a>
             <a class="paginator__page-link" href="#4">4</a>
             <a class="paginator__page-link" href="#5">5</a>
-            <a class="paginator__arrow  paginator__arrow--next" href="">&gt;</a>
+            <a class="paginator__arrow  paginator__arrow--next" href="" title="Следующая страница">&gt;</a>
           </div>
         </section>
       </main>
@@ -570,7 +569,7 @@
       </footer>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
